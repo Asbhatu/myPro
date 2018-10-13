@@ -1,0 +1,124 @@
+<div class="container fluid">
+
+    <div class="text-center ">
+        <h1> Student Registeration Form.</h1>
+        
+    </div>
+
+    <legend></legend>
+
+    <div class="container well" style="background:rgb(246, 247, 248)">
+            <form #regForm = "ngForm" (ngSubmit) = "eventHandler(regForm.value)">
+                    <div class="row">
+                        <div  class="col-sm-6">        
+                            <div class="form-group has-success">
+                                    <label for="firstNameInput">First Name</label>
+                                    <input type="text" class="form-control" 
+                                    id="firstNameInput"  name="firstNameInput"
+                                    
+                                    >
+                                  </div>
+                        </div>
+            
+                        <div  class="col-sm-6">              
+                                <div class="form-group has-success">
+                                        <label for="LastNameInput">Last Name</label>
+                                        <input type="text" class="form-control" 
+                                        id="LastNameInput"  name="LasttNameInput"
+                                        
+                                        >
+                                      </div>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                            <div  class="col-sm-6">        
+                                <div class="form-group has-success">
+                                        <label for="email">Email:</label>
+                                        <input type="email" class="form-control" 
+                                        id="email"  name="email"
+                                        >
+                                      </div>
+                            </div>
+                
+                            <div  class="col-sm-6">              
+                                    <div class="form-group has-success">
+                                            <label for="Phone">Phone</label>
+                                            <input type="number" class="form-control" 
+                                            id="Phone"  name="Phone"
+                                        
+                                            >
+                                          </div>
+                            </div>
+                        </div>
+            
+            
+                        <div class="row">
+                                <div  class="col-sm-6">        
+                                    <div class="form-group has-success">
+                                            <label for="country">Country</label>
+                                            <input type="text" class="form-control" 
+                                            id="country"  name="country"
+                                           
+                                           >
+                                          </div>
+                                </div>
+                    
+                               
+                            </div>
+            
+            
+                            <div class="row">
+                                    <div  class="col-sm-6">        
+                                        <div class="form-group has-success">
+                                                <label for="state">State</label>
+                                                <select id="inputState" class="form-control">
+                                                    <option selected>Choose...</option>
+                                                    <option>...</option>
+                                                  </select>
+                                                
+                                              </div>
+                                    </div>
+                        
+                                
+                                    <div  ng-show="isUSA" class="col-sm-6">              
+                                            <div   class="form-group has-success">
+                                                    <label for="city">City</label>
+                                                    <input type="text" class="form-control" 
+                                                    id="city"  name="city"
+                                                    
+                                                   >
+                                                  </div>
+                                    </div>
+
+                                
+                                
+                                        <div  class="col-sm-6">        
+                                            <div class="form-group has-success">
+                                                    <label for="zip">Zip</label>
+                                                    <input type="text" class="form-control" 
+                                                    id="zip"  name="zip"
+                                                    
+                                                    >
+                                                  </div>
+                                        </div>
+                            
+                                        
+                                    </div>
+
+
+                  <input type = "submit" value = "submit">
+                         
+                </form>
+
+    </div>
+
+
+   
+
+
+</div>
+
+
+
+
